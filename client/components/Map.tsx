@@ -2,6 +2,7 @@ import { useState } from 'react'
 import React, { useRef, useEffect } from 'react'
 import mapboxgl from 'mapbox-gl'
 import './App.css'
+import MapClickHandler from './AddLocation'
 
 const REACT_APP_MAPBOX_ACCESS_TOKEN =
   'pk.eyJ1Ijoia2F0aWVnZWUiLCJhIjoiY2xvcWNxbDhrMGhmbjJrbWM1ZWFtZHIzcCJ9.BNmn1eIG0EBZkXUr4SuxDQ'
@@ -28,7 +29,7 @@ const Map = () => {
             center: [userLng, userLat],
             zoom: 12.5,
           })
-
+          MapClickHandler(map)
           // add navigation control
           map.addControl(new mapboxgl.NavigationControl(), 'bottom-right')
 
