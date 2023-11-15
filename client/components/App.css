@@ -5,3 +5,8 @@
   left: 0;
   right: 0;
 }
+
+.custom-marker {
+  font-size: 24px;
+  cursor: pointer;
+}

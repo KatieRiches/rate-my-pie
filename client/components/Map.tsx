@@ -3,6 +3,7 @@ import React, { useRef, useEffect } from 'react'
 import mapboxgl from 'mapbox-gl'
 import './App.css'
 import MapClickHandler from './AddLocation'
+import RatingForm from './RatingForm'
 
 const REACT_APP_MAPBOX_ACCESS_TOKEN =
   'pk.eyJ1Ijoia2F0aWVnZWUiLCJhIjoiY2xvcWNxbDhrMGhmbjJrbWM1ZWFtZHIzcCJ9.BNmn1eIG0EBZkXUr4SuxDQ'
