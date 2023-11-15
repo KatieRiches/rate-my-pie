@@ -35,6 +35,13 @@ const Map = () => {
           //add a marker at users location
           new mapboxgl.Marker().setLngLat([userLng, userLat]).addTo(map)
 
+          // add click event listner to the map
+          map.on('click', (e) => {
+            const { lng, lat } = e.lngLat
+
+            //Creates the marker
+            new mapboxgl.Marker().setLngLat([lng, lat]).addTo(map)
+          })
           // clean up on unmount
           return () => map.remove()
         },
