@@ -32,6 +32,9 @@ const Map = () => {
           // add navigation control
           map.addControl(new mapboxgl.NavigationControl(), 'bottom-right')
 
+          //add a marker at users location
+          new mapboxgl.Marker().setLngLat([userLng, userLat]).addTo(map)
+
           // clean up on unmount
           return () => map.remove()
         },
