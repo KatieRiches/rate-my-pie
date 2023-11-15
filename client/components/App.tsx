@@ -1,5 +1,5 @@
 // import React, { useRef, useEffect } from 'react'
-// import { useState } from 'react'
+import { useState } from 'react'
 // import { getGreeting } from '../apiClient'
 
 // const App = () => {
@@ -48,21 +48,37 @@ mapboxgl.accessToken = REACT_APP_MAPBOX_ACCESS_TOKEN
 const App = () => {
   const mapContainerRef = useRef(null)
 
-  // initialize map when component mounts
   useEffect(() => {
-    const map = new mapboxgl.Map({
-      container: mapContainerRef.current ? mapContainerRef.current : 'map',
-      // See style options here: https://docs.mapbox.com/api/maps/#styles
-      style: 'mapbox://styles/mapbox/streets-v11',
-      center: [-104.9876, 39.7405],
-      zoom: 12.5,
-    })
+    // Check if the Geolocation API is supported by the browser
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const userLat = position.coords.latitude
+          const userLng = position.coords.longitude
 
-    // add navigation control (the +/- zoom buttons)
-    map.addControl(new mapboxgl.NavigationControl(), 'bottom-right')
+          // initialize map with the user's current location
+          const map = new mapboxgl.Map({
+            container: mapContainerRef.current
+              ? mapContainerRef.current
+              : 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [userLng, userLat],
+            zoom: 12.5,
+          })
 
-    // clean up on unmount
-    return () => map.remove()
+          // add navigation control
+          map.addControl(new mapboxgl.NavigationControl(), 'bottom-right')
+
+          // clean up on unmount
+          return () => map.remove()
+        },
+        (error) => {
+          console.error('Error getting current location:', error)
+        }
+      )
+    } else {
+      console.error('Geolocation is not supported by your browser')
+    }
   }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   return <div className="map-container" ref={mapContainerRef} />
