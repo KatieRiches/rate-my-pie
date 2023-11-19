@@ -2,6 +2,7 @@ import mapboxgl, { Map, MapMouseEvent, Popup } from 'mapbox-gl'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import RatingForm from './RatingForm'
+import './App.css'
 
 //store map markers
 const markers: mapboxgl.Marker[] = []

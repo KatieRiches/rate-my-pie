@@ -9,9 +9,9 @@ interface Props {
 const initialState = {
   shopname: '',
   flavour: '',
-  pastry: '',
-  meat: '',
-  gravy: '',
+  pastry: 0,
+  meat: 0,
+  gravy: 0,
   rating: 0,
 }
 
@@ -34,7 +34,9 @@ export function AddRating({ onAddRating }: Props) {
       <div className="form">
         <h2>Rate a Pie 🥧</h2>
         <form onSubmit={handleSubmit}>
-          <label htmlFor="shopname">Shop Name:</label>
+          <label htmlFor="shopname" className="label">
+            Shop Name:
+          </label>
           <input
             type="text"
             name="shopname"
@@ -42,7 +44,9 @@ export function AddRating({ onAddRating }: Props) {
             value={form.shopname}
             onChange={handleChange}
           />
-          <label htmlFor="flavour">Flavour:</label>
+          <label htmlFor="flavour" className="label">
+            Flavour:
+          </label>
           <input
             type="text"
             name="flavour"
@@ -50,35 +54,52 @@ export function AddRating({ onAddRating }: Props) {
             value={form.flavour}
             onChange={handleChange}
           />
+          <label htmlFor="flavour" className="label">
+            Pastry:
+          </label>
           <input
-            type="text"
+            type="number"
             name="pastry"
             id="pastry"
             value={form.pastry}
             onChange={handleChange}
           />
+          <br></br>
+          <label htmlFor="flavour" className="label">
+            Meat:
+          </label>
           <input
-            type="text"
+            type="number"
             name="meat"
             id="meat"
             value={form.meat}
             onChange={handleChange}
           />
+          <br></br>
+          <label htmlFor="flavour" className="label">
+            Gravy:
+          </label>
           <input
-            type="text"
+            type="number"
             name="gravy"
             id="gravy"
             value={form.gravy}
             onChange={handleChange}
           />
+          <br></br>
+          <label htmlFor="flavour" className="label">
+            Rating:
+          </label>
           <input
-            type="text"
+            type="number"
             name="rating"
             id="rating"
             value={form.rating}
             onChange={handleChange}
           />
-          <button type="submit">Submit</button>
+          <button type="submit" className="label">
+            Submit
+          </button>
         </form>
       </div>
     </>
