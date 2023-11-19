@@ -10,9 +10,9 @@ function Rate({ rating }: Props) {
     <section>
       <ul>
         {rating.map((a) => (
-          <li key={a.id}>
+          <li key={a.shopname}>
             <h3>Name:</h3>
-            <p>{a.name}</p>
+            <p>{a.shopname}</p>
             <h3>Flavour:</h3>
             <p>{a.flavour}</p>
             <h3>Pastry:</h3>

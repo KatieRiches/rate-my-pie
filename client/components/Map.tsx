@@ -44,6 +44,7 @@ const Map = () => {
             //Creates the marker
             new mapboxgl.Marker().setLngLat([lng, lat]).addTo(map)
           })
+
           // clean up on unmount
           return () => map.remove()
         },
