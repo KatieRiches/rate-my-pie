@@ -1,3 +1,8 @@
+# This is my current personal project building a fullstack development project which will be eventually a mobile app.
+
+
+
+
 # Boilerplate: React with Express and Vite
 
 This is a starter project that uses Vite to bundle a React app and Express to serve it in production. Express is used in development to serve an API server.
