@@ -3,7 +3,6 @@ import mapboxgl from 'mapbox-gl'
 import './App.css'
 import MapClickHandler from './AddLocation'
 import RatingForm from './RatingForm'
-import Popup from './ShopForm' // Import your PopupBase component
 
 const REACT_APP_MAPBOX_ACCESS_TOKEN =
   'pk.eyJ1Ijoia2F0aWVnZWUiLCJhIjoiY2xvcWNxbDhrMGhmbjJrbWM1ZWFtZHIzcCJ9.BNmn1eIG0EBZkXUr4SuxDQ'
@@ -12,8 +11,6 @@ mapboxgl.accessToken = REACT_APP_MAPBOX_ACCESS_TOKEN
 
 const Map = () => {
   const mapContainerRef = useRef(null)
-  const [popupLngLat, setPopupLngLat] = useState(null)
-  const [content, setContent] = useState<string | null>(null)
 
   useEffect(() => {
     // Check if the Geolocation API is supported by the browser

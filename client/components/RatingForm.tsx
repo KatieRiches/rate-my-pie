@@ -13,6 +13,8 @@ const initialState = {
   meat: 0,
   gravy: 0,
   rating: 0,
+  overallrating: 0,
+  shopspecialty: '',
 }
 
 export function AddRating({ onAddRating }: Props) {

@@ -5,10 +5,6 @@ export interface Rating {
   meat: number
   gravy: number
   rating: number
-}
-
-export interface Shop {
-  shopname: string
   overallrating: number
   shopspecialty: string
 }
