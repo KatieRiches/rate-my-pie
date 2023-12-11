@@ -1,7 +1,4 @@
 import mapboxgl, { Map, MapMouseEvent, Popup } from 'mapbox-gl'
-import React from 'react'
-import ReactDOM from 'react-dom'
-import RatingForm from './RatingForm'
 import ShopRate from './ShopRate'
 import './App.css'
 import { createRoot } from 'react-dom/client'

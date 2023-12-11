@@ -7,7 +7,7 @@ interface Props {
 
 function ShopRate({ shop }: Props) {
   const handleAddRatingClick = () => {
-    window.location.href = '/rating-form'
+    window.location.href = '/rating'
   }
   return (
     <section>
