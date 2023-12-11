@@ -2,7 +2,9 @@ import mapboxgl, { Map, MapMouseEvent, Popup } from 'mapbox-gl'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import RatingForm from './RatingForm'
+import ShopRate from './ShopRate'
 import './App.css'
+import { createRoot } from 'react-dom/client'
 
 //store map markers
 const markers: mapboxgl.Marker[] = []
@@ -20,7 +22,7 @@ const MapClickHandler = (map: Map) => {
     const popupContent = document.createElement('div')
 
     // Render the rating form in the popup
-    ReactDOM.render(<RatingForm />, popupContent)
+    createRoot(popupContent).render(<ShopRate shop={[]} />)
 
     //create a mapGL popUp
     const popup = new Popup({ offset: 25 })

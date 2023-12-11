@@ -11,17 +11,8 @@ function Rate({ rating }: Props) {
       <ul>
         {rating.map((a) => (
           <li key={a.shopname}>
-            {/* //Initial form */}
-
             <h3>Name:</h3>
             <p>{a.shopname}</p>
-            <h3>Specialty:</h3>
-            <p>{a.shopspecialty}</p>
-            <h3>Overall Rating:</h3>
-            <p>{a.overallrating}</p>
-            {/* 
-            //Secondary Ratings */}
-
             <h3>Flavour:</h3>
             <p>{a.flavour}</p>
             <h3>Pastry:</h3>

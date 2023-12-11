@@ -30,7 +30,8 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.2",
-    "mapbox-gl": "^2.15.0"
+    "mapbox-gl": "^2.15.0",
+    "react-router-dom": "^6.20.1"
   },
   "devDependencies": {
     "@devacademy/eslint-config": "^1.9.1",
