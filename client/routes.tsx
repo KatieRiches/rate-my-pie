@@ -5,12 +5,12 @@ import {
 } from 'react-router-dom'
 import App from './components/App'
 import Map from './components/Map'
-import ShopRate from './components/ShopRate'
+import Form from './components/RatingForm'
 
 export const routes = createRoutesFromElements(
-  <Route path="/" element={<Map />}>
-    <Route index element={<App />} />
-    <Route path="/map" element={<ShopRate shop={[]} />} />
+  <Route path="/" element={<App />}>
+    <Route index element={<Map />} />
+    <Route path="/rating" element={<Form />} />
   </Route>
 )
 

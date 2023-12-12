@@ -108,7 +108,7 @@ export function AddRating({ onAddRating }: Props) {
   )
 }
 
-function RatingForm() {
+function Form() {
   const [rate, setRate] = useState<Rating[]>([])
 
   function handleRating(newRate: Rating) {
@@ -122,4 +122,4 @@ function RatingForm() {
   )
 }
 
-export default RatingForm
+export default Form
