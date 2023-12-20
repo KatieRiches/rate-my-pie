@@ -1,30 +1,22 @@
-# Boilerplate: React with Express and Vite
+# Rate My Pie {Ongoing}
 
-This is a starter project that uses Vite to bundle a React app and Express to serve it in production. Express is used in development to serve an API server.
+## Overview
 
-Vite React App: [http://localhost:5173](http://localhost:5173)
-Express API Server: [http://localhost:3000](http://localhost:3000)
+"Rate My Pie" is a map-based application that empowers users to discover and rate pies available in different locations around town. This app was designed with my husband a tradie in mind. When he's looking for a quick snack a pie is his go to. When working around town he never knows where the best place to go is. The aim of this app was to overcome this.
 
-Requests to `http://localhost:5173/api` are proxied to `http://localhost:3000/api`.
+![image](https://github.com/KatieRiches/rate-my-pie/assets/103969925/99c4e9bf-8353-461f-a30c-b9a7ed679d32)
 
-## Setup
 
-### Installation
+## Features - These are ongoing goals of this project
 
-To use, consider these steps:
+- **Interactive Map:** Explore an interactive map showcasing various pie locations in the town. {Currently shows you your location and can add a temporary pin}
 
-- Fork this repo
-- Rename your repo according to the app you're building
+- **Pie Ratings:** Users can rate and leave reviews for their favorite pies, contributing to a community-driven rating system. {Draft form created - no database set up yet}
 
-```sh
-git clone https://github.com/[your-account]/[your-app].git
-cd [your-app] && npm i
-```
+- **Search Functionality:** Easily search for specific pie flavors, types, or locations to find the perfect pie for your cravings. {Stretch goal!}
 
-To start the development server with a watcher that rebuilds your code, run `npm run dev`.
+- **User Profiles:** Create a personalized profile to keep track of your favorite pies, reviews, and contributions. {Stretch goal!}
 
-Additional components should be placed in `client/components`.
+- **Pie Recommendations:** Receive personalized pie recommendations based on your preferences and previous ratings. {Stretch goal!}
 
----
 
-[Provide feedback on this repo](https://docs.google.com/forms/d/e/1FAIpQLSfw4FGdWkLwMLlUaNQ8FtP2CTJdGDUv6Xoxrh19zIrJSkvT4Q/viewform?usp=pp_url&entry.1958421517=boilerplate-react-api)
