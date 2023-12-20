@@ -1,35 +1,22 @@
-# This is my current personal project building a fullstack development project which will be eventually a mobile app.
+# Rate My Pie {Ongoing}
+
+## Overview
+
+"Rate My Pie" is a map-based application that empowers users to discover and rate pies available in different locations around town. This app was designed with my husband a tradie in mind. When he's looking for a quick snack a pie is his go to. When working around town he never knows where the best place to go is. The aim of this app was to overcome this.
+
+![image](https://github.com/KatieRiches/rate-my-pie/assets/103969925/99c4e9bf-8353-461f-a30c-b9a7ed679d32)
 
 
+## Features - These are ongoing goals of this project
+
+- **Interactive Map:** Explore an interactive map showcasing various pie locations in the town. {Currently shows you your location and can add a temporary pin}
+
+- **Pie Ratings:** Users can rate and leave reviews for their favorite pies, contributing to a community-driven rating system. {Draft form created - no database set up yet}
+
+- **Search Functionality:** Easily search for specific pie flavors, types, or locations to find the perfect pie for your cravings. {Stretch goal!}
+
+- **User Profiles:** Create a personalized profile to keep track of your favorite pies, reviews, and contributions. {Stretch goal!}
+
+- **Pie Recommendations:** Receive personalized pie recommendations based on your preferences and previous ratings. {Stretch goal!}
 
 
-# Boilerplate: React with Express and Vite
-
-This is a starter project that uses Vite to bundle a React app and Express to serve it in production. Express is used in development to serve an API server.
-
-Vite React App: [http://localhost:5173](http://localhost:5173)
-Express API Server: [http://localhost:3000](http://localhost:3000)
-
-Requests to `http://localhost:5173/api` are proxied to `http://localhost:3000/api`.
-
-## Setup
-
-### Installation
-
-To use, consider these steps:
-
-- Fork this repo
-- Rename your repo according to the app you're building
-
-```sh
-git clone https://github.com/[your-account]/[your-app].git
-cd [your-app] && npm i
-```
-
-To start the development server with a watcher that rebuilds your code, run `npm run dev`.
-
-Additional components should be placed in `client/components`.
-
----
-
-[Provide feedback on this repo](https://docs.google.com/forms/d/e/1FAIpQLSfw4FGdWkLwMLlUaNQ8FtP2CTJdGDUv6Xoxrh19zIrJSkvT4Q/viewform?usp=pp_url&entry.1958421517=boilerplate-react-api)
